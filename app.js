@@ -29,7 +29,7 @@ const listItem3 = new ListItem({
     name: "Eat Food"
 });
 
-const defaultListItems = [];
+const defaultListItems = [listItem1, listItem2, listItem3];
 
 const customlistItemSchema = {
     name: {
@@ -143,7 +143,7 @@ app.post("/delete", function (req, res) {
         });
 
     }
-
+    
 });
 
  app.get("/about", function (req, res) {
